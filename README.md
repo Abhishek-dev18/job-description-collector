@@ -30,3 +30,12 @@ Add the following secrets in your GitHub repository settings:
 
 ### 3. Repository Structure
 
+job-description-collector/
+│
+├── job_fetcher.py
+├── .github/
+│   └── workflows/
+│       └── daily-job-fetch.yml
+├── README.md
+
+
