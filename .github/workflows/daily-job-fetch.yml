@@ -1,9 +1,12 @@
 name: Daily Job Fetch and Upload
 
+# on:
+#   schedule:
+#     - cron: '0 7 * * *'  # every day at 7:00 AM UTC
+#   workflow_dispatch:
+
 on:
-  schedule:
-    - cron: '0 7 * * *'  # every day at 7:00 AM UTC
-  workflow_dispatch:
+  workflow_dispatch:  # Only allow manual runs
 
 jobs:
   fetch_and_upload:
